@@ -1,0 +1,5 @@
+[2024-02-08 14:08:43] Error, Invalid verification token
+[2024-02-08 14:08:58] Error, Invalid verification token
+[2024-02-08 14:09:50] Error, Invalid verification token
+[2024-02-08 14:10:30] Error, Invalid verification token
+[2024-02-08 14:12:20] Error, Invalid verification token
