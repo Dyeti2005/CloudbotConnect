@@ -12,7 +12,8 @@ log = Logger()
 bot = Chatbot()
 
 PHONE_ID = os.environ.get("PHONE_ID")
-VERIFY_TOKEN = os.environ.get("META_VERIFY_TOKEN")
+PHONE_TOKEN = os.environ.get("META_VERIFY_TOKEN")
+VERIFY_TOKEN = os.environ.get("META_VERIFY_WEBHOOK_TOKEN")
 
 @webhook_bp.route('/webhook/', methods=['GET'])
 def handle_verification():
@@ -39,10 +40,11 @@ def handle_messages():
         
         log.write_log(f"bot reply: {mensaje}")
 
-        msg=WhatsApp(VERIFY_TOKEN,PHONE_ID)
+        msg=WhatsApp(PHONE_TOKEN,phone_number_id=PHONE_ID)
         msg.send_message(reply,telefono)
-        
+
         return "Message Processed",200
     
     except Exception as Ex:
         log.write_log(str(Ex))
+        return "an error has ocurred",418

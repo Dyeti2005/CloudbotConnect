@@ -7,5 +7,9 @@ def create_app():
 
     from .webhook.routes import webhook_bp
     app.register_blueprint(webhook_bp)
+    
+    @app.route('/')
+    def hello_world():
+        return "hello world",200
 
     return app

@@ -3,3 +3,5 @@
 [2024-02-08 14:09:50] Error, Invalid verification token
 [2024-02-08 14:10:30] Error, Invalid verification token
 [2024-02-08 14:12:20] Error, Invalid verification token
+[2024-02-08 22:20:16] Error, Invalid verification token
+[2024-02-14 22:32:01] Error, Invalid verification token
